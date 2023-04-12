@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1578816285505"
+    createdUser="manoranjansaho" id="7550d8ce:16f98c39cbb:-7df3"
+    references="5acb0cce:16f9e86b494:-7e85" type="test_resource"
+    updatedTimestamp="1676648209476" updatedUser="STUART.WALKER" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="7550d8ce:16f98c39cbb:-7df1"
+                references="5acb0cce:16f9e86b494:-7e85"
+                selfDescribing="Publish a message on a transport. Select the transport, formatter, and define the message content to be sent."
+                type="publish_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description=""
+                    formatter="kafka_formatter"
+                    name="&quot;KafkaMessage&quot; using schema &quot;KafkaMessage&quot; via &quot;Kafka&quot;" transport="5acb0cce:16f9e86b494:-7e85">
+                    <headerMessage name="" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="Message" name="Headers" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="true"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c meTy="disabled" name="Topic" type="7"
+                                value="PaymentRequest" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="PaymentRequest" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                            <_c meTy="disabled" name="PartitionId"
+                                type="7" value="0" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="0" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                        </_c>
+                        <_c meTy="Message" name="Parameters" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="true"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </headerMessage>
+                    <bodyMessage assocdefid="KafkaMessage"
+                        name="KafkaMessage" sch="KafkaMessage" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c coreTypeInt="14" coreTypeName="ByteArray"
+                            name="value"
+                            nodeFormatter="byte_array_encoding_node_formatter"
+                            sch="KafkaMessage" type="12" version="1.2">
+                            <fieldExpander
+                                fieldExpanderID="byte_array_encoding_fieldexpander"
+                                fieldSchema="ByteArrayInline" fieldSchemaRoot="ByteArray">
+                                <property
+                                    name="byte_array_encoding_property" value="UTF-8"/>
+                            </fieldExpander>
+                            <contentTree>46726F6D2D41434331323334352C546F2D41434335343332312C416D6F756E742D393939<defaultActions>
+                                    <defaultMessageActions>
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="true"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    <fieldAction type="0">
+                                    <fieldAction type="100"/>
+                                    </fieldAction>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false" type="5"/>
+                                    </fieldAction>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction type="0">
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false" type="5"/>
+                                    </fieldAction>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultScalarActions>
+                                </defaultActions>
+                                <updates>
+                                    <setAction index="0"
+                                    path="/value/{}"
+                                    replaceActionType="100" replaceOuterType="1">
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <updateField path="/value/{}">
+                                    <_c assocdefid="ByteArray"/>
+                                    </updateField>
+                                </updates>
+                            </contentTree>
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction type="4"/>
+                                </fieldAction>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="7"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="7550d8ce:16f98c39cbb:-7dee"
+                references="5acb0cce:16f9e86b494:-7e85"
+                selfDescribing="Choose a transport and formatter on which to receive and validate a message."
+                type="subscribe_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description=""
+                    formatter="kafka_formatter"
+                    name="&quot;KafkaMessage&quot; on topic &quot;PaymentResponse&quot; using schema &quot;KafkaMessage&quot; timeout 50000ms via &quot;Kafka&quot;"
+                    timeout="50000" timeoutTolerance="50000" transport="5acb0cce:16f9e86b494:-7e85">
+                    <headerMessage assocdefid="Kafka Subscribe"
+                        meTy="Message" name="" sch="Kafka Subscribe"
+                        type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c name="Offset" sch="Kafka Subscribe" type="3" version="1.2"/>
+                        <_c name="TimeStamp" sch="Kafka Subscribe"
+                            type="3" version="1.2"/>
+                        <_c name="PartitionId" sch="Kafka Subscribe"
+                            type="2" version="1.2"/>
+                        <_c name="Topic" sch="Kafka Subscribe" type="7" version="1.2"/>
+                        <_c meTy="Date-Time" name="rcvdTimestamp"
+                            sch="Kafka Subscribe" type="11" version="1.2"/>
+                        <_c meTy="Message" name="Parameters"
+                            sch="Kafka Subscribe" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="true"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </headerMessage>
+                    <subconfig GroupId="" Topic="PaymentResponse"
+                        _version="1.1" auto.offset.reset="latest"
+                        formatter="kafka_formatter" transport="5acb0cce:16f9e86b494:-7e85"/>
+                    <bodyMessage assocdefid="KafkaMessage"
+                        name="KafkaMessage" sch="KafkaMessage" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="1">
+                                <fieldAction anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c name="key" sch="KafkaMessage" type="14" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="1">
+                                    <fieldAction type="8"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c coreTypeInt="14" coreTypeName="ByteArray"
+                            name="value"
+                            nodeFormatter="byte_array_encoding_node_formatter"
+                            sch="KafkaMessage" type="12" version="1.2">
+                            <fieldExpander
+                                fieldExpanderID="byte_array_encoding_fieldexpander"
+                                fieldSchema="ByteArrayInline" fieldSchemaRoot="ByteArray">
+                                <property
+                                    name="byte_array_encoding_property" value="UTF-8"/>
+                            </fieldExpander>
+                            <contentTree>53756363657373<defaultActions>
+                                    <defaultMessageActions>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction
+                                    anyOrder="true"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultScalarActions>
+                                </defaultActions>
+                                <updates>
+                                    <setAction index="0"
+                                    path="/value/{}"
+                                    replaceActionType="100" replaceOuterType="1">
+                                    <fieldAction type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <updateField path="/value/{}">
+                                    <_c assocdefid="ByteArray"/>
+                                    </updateField>
+                                    <updateField path="/value/{}/data">
+                                    <_c value="Success"/>
+                                    </updateField>
+                                </updates>
+                            </contentTree>
+                            <fieldActionGroup>
+                                <fieldAction type="1">
+                                    <fieldAction type="7"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE"/>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

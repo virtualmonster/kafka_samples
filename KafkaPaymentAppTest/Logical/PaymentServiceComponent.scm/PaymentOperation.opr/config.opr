@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1578816024128" createdUser="manoranjansaho" id="7550d8ce:16f98c39cbb:-7ec7" type="operation_resource" updatedTimestamp="1578918241441" updatedUser="stuart.walker" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig avgTime="0" color="124,199,255" dependencies="5acb0cce:16f9e86b494:-7e85" invokeEndFormatterID="kafka_formatter" invokeEndTransportID="5acb0cce:16f9e86b494:-7e85" invokeFormatterID="kafka_formatter" invokeTransportID="5acb0cce:16f9e86b494:-7e85" maxTime="0" mepEndSchemaID="ByteArrayInline" mepEndSchemaNodeFormatter="byte_array_encoding_node_formatter" mepEndSchemaroot="ByteArray" mepEndUsed="true" mepStartSchemaID="ByteArrayInline" mepStartSchemaNodeFormatter="byte_array_encoding_node_formatter" mepStartSchemaroot="ByteArray" mepType="IN_OUT_PUBLISH" minTime="0" stubEndFormatterID="kafka_formatter" stubEndTransportID="5acb0cce:16f9e86b494:-7e85" stubFormatterID="kafka_formatter" stubTransportID="5acb0cce:16f9e86b494:-7e85">
+      <invokeHeaderNode name="" type="12" version="1.2">
+         <fieldActionGroup>
+            <fieldAction enabled="false" type="1">
+               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+            </fieldAction>
+         </fieldActionGroup>
+         <_c meTy="String" name="Topic" type="7" value="PaymentRequest" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="PaymentRequest" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="String" name="PartitionId" type="7" value="0" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction exp="0" type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+      </invokeHeaderNode>
+      <stubHeaderConfig>
+         <_c GroupId="defaultGroupId" Topic="PaymentRequest" auto.offset.reset="latest"/>
+      </stubHeaderConfig>
+      <invokeEndHeaderConfig>
+         <_c GroupId="demo1" Topic="PaymentResponse" auto.offset.reset="latest"/>
+      </invokeEndHeaderConfig>
+      <stubEndHeaderNode name="" type="12" version="1.2">
+         <fieldActionGroup>
+            <fieldAction enabled="false" type="1">
+               <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+            </fieldAction>
+         </fieldActionGroup>
+         <_c meTy="String" name="Topic" type="7" value="" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+         <_c meTy="String" name="PartitionId" type="7" value="" version="1.2">
+            <fieldActionGroup>
+               <fieldAction type="0">
+                  <fieldAction type="0"/>
+               </fieldAction>
+            </fieldActionGroup>
+         </_c>
+      </stubEndHeaderNode>
+   </resourceConfig>
+</editableResource>

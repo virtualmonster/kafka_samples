@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1578816043145"
+    createdUser="manoranjansaho" id="7550d8ce:16f98c39cbb:-7ebf"
+    selfDescribing="Kafka_NonProxied - Kafka Broker [kafka://localhost:9092]"
+    type="kafka_transport" updatedTimestamp="1681329324071"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="Kafka_NonProxied" transportTemplateName="kafka">
+        <_c Auth="None" ClientId="API Tester"
+            ClientSecret="#com.ghc.1!f273" Host="localhost"
+            OAuthClientId="" Port="9092" ProxyHost="" ProxyPort=""
+            Pwd="#com.ghc.1!60e7" StubMode="DIRECT" StubPort="0"
+            TokenEndPoint="" User="" useSsl="false"/>
+    </resourceConfig>
+</editableResource>
